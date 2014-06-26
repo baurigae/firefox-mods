@@ -157,8 +157,8 @@ background-color: -moz-Field !important;
 /*reduce tab height, reduce padding around awesomebar, reduce margin left and right on tabbar, remove rounded back-forward button bg*/
 
 #tabbrowser-tabs {
- height:28px!important;
- min-height: 28px !important;
+        height:28px!important;
+        min-height: 28px !important;
 }
 
 .tab-background-start[selected=true]::after,
@@ -170,30 +170,33 @@ background-color: -moz-Field !important;
  min-height: 28px !important;
 }
 
-.tabbrowser-tabs *|tab {    
-    font-size: 12px !important;
+.tabbrowser-tabs *|tab 
+{    
+font-size: 12px !important;
 }
 
-  #TabsToolbar { margin-left: -15px !important; 
-      margin-right: -15px !important; 
+#TabsToolbar {
+       margin-left: -15px !important; 
+       margin-right: -15px !important; 
 }
 
 #back-button#back-button#back-button>image.toolbarbutton-icon,
 #forward-button#forward-button#forward-button>image.toolbarbutton-icon
 {
-background: none !important;
-box-shadow: none !important;
-border-color: transparent !important;
+       background: none !important;
+       box-shadow: none !important;
+       border-color: transparent !important;
 } 
 
 #urlbar-wrapper > #forward-button {
-  margin:0 !important;
+       margin:0 !important;
 }
 
-#urlbar-wrapper {clip-path: none !important;
+#urlbar-wrapper {
+	clip-path: none !important;
 }
 
 #nav-bar>*{
-margin-top: -3px !important;
-margin-bottom: -4px !important;
+        margin-top: -3px !important;
+        margin-bottom: -4px !important;
 }
