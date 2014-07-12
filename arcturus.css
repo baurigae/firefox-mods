@@ -172,8 +172,7 @@ background-color: -moz-Field !important;
 }
 
 #back-button#back-button#back-button>image.toolbarbutton-icon,
-#forward-button#forward-button#forward-button>image.toolbarbutton-icon
-{
+#forward-button#forward-button#forward-button>image.toolbarbutton-icon {
 	background: none !important;
 	box-shadow: none !important;
 	border-color: transparent !important;
