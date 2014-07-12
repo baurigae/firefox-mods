@@ -1,4 +1,4 @@
-###firefox UI mods
+###firefox UI mods/for Linux
 
 ######_menakalinan_
 WIP to make [this](https://github.com/lassekongo83/zuki-themes/blob/master/Zukitre-firefox-theme/chrome/userChrome.css) suit me better
