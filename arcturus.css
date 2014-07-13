@@ -105,6 +105,7 @@ background-color: -moz-Field !important;
 	padding: 0 2px !important;
 	margin: 0 !important;
 }
+
 #nav-bar {
 	background-image: none !important;
 	background-color: #F1F1F1 !important;
@@ -128,6 +129,7 @@ background-color: -moz-Field !important;
 #TabsToolbar {
 	-moz-box-ordinal-group: 2 !important;
 }
+
 #addon-bar {
 	-moz-box-ordinal-group: 3 !important;
 }
