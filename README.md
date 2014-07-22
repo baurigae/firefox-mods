@@ -15,5 +15,9 @@ So far:
 
 Further mod to make the style match my [Moskva GTK/Unity theme](https://github.com/baurigae/moskva) color-scheme-wise, and also by removing shadows
 
+######_vega_
+
+Color mod of _arcturus_ to make the style match my [Vladivostok GTK/Unity theme](https://github.com/baurigae/vladivostok).
+
 _I use these with the default theme, as styles via Stylish - Firefox 30 running on Ubuntu 14.04._
 _Credit: [lassekongo](https://github.com/lassekongo83)_
