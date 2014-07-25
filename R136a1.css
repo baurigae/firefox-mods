@@ -185,7 +185,7 @@ background-color: -moz-Field !important;
 	background: none !important;
 	box-shadow: none !important;
 	border-color: transparent !important;
-    margin-right: 240px;
+    margin-right: 50px;
  } 
 
 #navigator-toolbox #forward-button {
@@ -215,20 +215,19 @@ background-color: -moz-Field !important;
 	opacity: 0.3 !important;
 }
 
+/*
 #urlbar-container {
-    /*min-width: 750px !important;*/
+    min-width: 750px !important;
     max-width: 1000px !important;
-}
+}*/
 
 #main-window[sizemode="maximized"] #urlbar-container {
     margin-left: 0px;
-    margin-right: 155px;
-  
+    margin-right: 50px;
 }
 
 #urlbar {
     height: 26px;
     background: white !important;
     border-radius: 6px !important;
-    
 }
