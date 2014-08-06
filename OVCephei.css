@@ -1,0 +1,232 @@
+/*this style is based on this one:
+to be used via stylish, on top of the default theme
+works in linux, firefox 30, 31
+made to match this gtk/unity theme: 
+tab width set via tabmixplus*/
+
+/* 
+Firefox CSS for Zukitre GTK Theme: https://github.com/lassekongo83/zuki-themes/blob/master/Zukitre-firefox-theme/chrome/userChrome.css
+modified by baurigae to match Polar Night GTK/Unity theme:
+used as a style via Stylish
+*/
+ 
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#urlbar {
+/*-moz-appearance: textfield !important;*/
+     border: 1px solid #363D43 !important;
+    font-size: 9pt !important;
+    height: 26px;
+    border-radius: 4px !important;
+}
+
+#urlbar > .autocomplete-history-dropmarker {
+	-moz-appearance: toolbarbutton-dropdown !important;
+	margin: 0px 3px 0px 5px !important;
+}
+ 
+#PopupAutoCompleteRichResult .autocomplete-richlistitem {
+	background: -moz-Field !important;
+}
+ 
+#PopupAutoCompleteRichResult .autocomplete-richlistitem[selected="true"] {
+	background: Highlight !important;
+}
+ 
+#PopupAutoCompleteRichResult .autocomplete-richlistitem[selected="true"],
+#PopupAutoCompleteRichResult .autocomplete-richlistitem[selected="true"] * {
+	color: HighlightText !important;
+}
+ 
+.ac-title {
+	color: -moz-Fieldtext !important;
+}
+ 
+#PopupAutoComplete .autocomplete-treebody {
+background-color: -moz-Field !important;
+	color: -moz-Fieldtext !important;
+}
+ 
+/* Identity/Bookmark pop-up improvements */
+#identity-popup-container {
+	-moz-appearance: dialog !important;
+}
+ 
+#editBookmarkPanel {
+	-moz-appearance: dialog !important;
+}
+ 
+#editBMPanel_foldersExpander, #editBMPanel_tagsSelectorExpander {
+	-moz-appearance: menulist-button !important;
+}
+
+/* Remove focus lines from tabs */
+.tabbrowser-tab > .tab-text {
+	border: 1px dotted transparent !important;
+}
+
+/* Square tabs */
+.tab-background-end[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before, .tab-background-start[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before, .tab-background-start[selected=true]:-moz-locale-dir(ltr):-moz-lwtheme::before,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl):-moz-lwtheme::before, .tab-background-end[selected=true]:-moz-locale-dir(ltr):-moz-lwtheme::before,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl):-moz-lwtheme::before,.tab-background-start[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl)::after,.tab-background-end[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl)::after, .tab-background-middle[selected=true], .tab-background-middle[selected=true]:-moz-lwtheme, .tab-background-start[selected=true]:-moz-lwtheme::before,
+.tab-background-end[selected=true]:-moz-lwtheme::before, #tabbrowser-tabs::before, .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]){
+	background-image: none !important;
+	background-color: transparent !important;
+	background-size: 100% 100%;
+}
+
+.tabs-newtab-button,
+.tabbrowser-tab:not([selected]) {
+	background-color: transparent !important;
+	color: #fff !important;
+	border: none !important;
+	background-image: none !important;
+	border-radius: 0 !important;
+}
+ 
+.tabs-newtab-button:hover,
+.tabbrowser-tab:not([selected]):hover {
+	background-color: rgba(255,255,255,0.2) !important;
+	color: #fff !important;
+}
+ 
+.tabbrowser-tab[selected] {
+	background-color: #363D43 !important;
+	color: #fff !important;
+	border: 1px solid #363D43 !important;
+	border-top-width: 0 !important;
+	border-bottom-width: 0px !important;
+	border-radius: 0 !important;
+	background-image: none !important;
+	box-shadow: inset 0 0px rgba(0,0,0,0.05) !important;
+}
+ 
+.tabbrowser-tab {
+	padding: 0 2px !important;
+	margin: 0 !important;
+}
+
+#nav-bar {
+	background-image: none !important;
+	background-color: #363D43 !important;
+	box-shadow: inset 0 -1px #363D43 !important;
+}
+ 
+#urlbar, #search-bar {
+	-moz-appearance: none !important;
+}
+
+/* Tabbar */
+.tabbrowser-tabs {
+	background-color: #3F474A !important;
+	border-top: 1px solid  #363D43 !important;
+	box-shadow: inset 0 2px  #3F474A !important;
+	margin: 0 !important;
+	border-bottom-width: 0 !important;
+}
+
+/* places the tabs at the bottom*/
+#TabsToolbar {
+	-moz-box-ordinal-group: 2 !important;
+}
+
+#addon-bar {
+	-moz-box-ordinal-group: 3 !important;
+}
+
+#TabsToolbar {
+	margin-bottom: -1px !important;
+	padding-left: 0 !important;
+}
+
+#TabsToolbar:after {
+	border-bottom: 1px solid #3F474A !important;
+	margin-bottom: -1px !important;
+}
+
+.tabs-newtab-button {
+	margin: 4px !important;
+	padding: 0px !important;
+	max-width: 24px !important;
+}
+
+#tabbrowser-tabs {
+ 	height:26px!important;
+	min-height: 26px !important;
+}
+
+.tab-background-start[selected=true]::after,
+.tab-background-start[selected=true]::before,
+.tab-background-start,
+.tab-background-end,
+.tab-background-end[selected=true]::after,
+.tab-background-end[selected=true]::before {
+ min-height: 26px !important;
+}
+
+.tabbrowser-tabs *|tab {    
+ font-size: 12px !important;
+}
+
+
+#TabsToolbar { 
+	margin-left: -15px !important; 
+	margin-right: -15px !important; 
+}
+
+#back-button#back-button#back-button>image.toolbarbutton-icon {
+	background: none !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
+  visibility: visible !important; 
+} 
+
+
+#forward-button#forward-button#forward-button>image.toolbarbutton-icon {
+	background: none !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
+} 
+
+#navigator-toolbox #forward-button {
+    visibility:visible!important; opacity:1 !important
+}
+
+
+#urlbar-wrapper > #forward-button {
+	margin: 0 !important;
+}
+
+#urlbar-wrapper {
+	clip-path: none !important;
+}
+
+#nav-bar>*{
+	margin-top: -1px !important;
+	margin-bottom: -2px !important;
+	margin-right: -6px !important;
+}
+
+#PanelUI-button {
+  	background-image:none !important; 
+}
+
+.tabbrowser-tab:before,
+.tabbrowser-tab:after { 
+	opacity: 0.2 !important;
+}
+
+#main-window[sizemode="maximized"] #urlbar-container {
+    margin-left: 0px;
+}
+
+#nav-bar .toolbarbutton-1,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
+#nav-bar .toolbarbutton-1 {
+	 margin: 0px 4px 0px 0px !important;
+}
