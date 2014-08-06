@@ -11,5 +11,7 @@ All have these changes in common:
 - removed separator between settings icon and rest of toolbar
 
 Used via Stylish on top of the default Firefox (30, 31) theme
+
 Running fine on Ubuntu 14.04
+
 Each style has a screenshot included
