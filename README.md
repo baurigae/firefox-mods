@@ -1,9 +1,8 @@
 ###firefox UI mods/for Linux
 
-######_menakalinan_
-WIP to make [this](https://github.com/lassekongo83/zuki-themes/blob/master/Zukitre-firefox-theme/chrome/userChrome.css) suit me better
+A bunch of styles, mostly to accompany gtk themes, that started out as a mod of [this](https://github.com/lassekongo83/zuki-themes/blob/master/Zukitre-firefox-theme/chrome/userChrome.css) 
 
-So far:
+All have these changes in common:
 
 - reduced padding around awesomebar
 - reduced margin left and right on tabbar
@@ -11,13 +10,6 @@ So far:
 - restored separators between tabs/pinned tabs
 - removed separator between settings icon and rest of toolbar
 
-######_arcturus_
-
-Further mod to make the style match my [Moskva GTK/Unity theme](https://github.com/baurigae/moskva) color-scheme-wise, and also by removing shadows
-
-######_vega_
-
-Color mod of _arcturus_ to make the style match my [Vladivostok GTK/Unity theme](https://github.com/baurigae/vladivostok).
-
-_I use these with the default theme, as styles via Stylish - Firefox 30 running on Ubuntu 14.04._
-_Credit: [lassekongo](https://github.com/lassekongo83)_
+Used via Stylish on top of the default Firefox (30, 31) theme
+Running fine on Ubuntu 14.04
+Each style has a screenshot included
