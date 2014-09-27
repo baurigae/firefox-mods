@@ -1,17 +1,27 @@
 /*
 .. endless iterations.. it only gets better :)
-tab width can easily be set via the Tabmixplus addon
+tab width can be set to maximum via the Tabmixplus addon
+other addons used in scrot: Page Title in URL Bar; Classic Toolbar Buttons
 */
+
  
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #urlbar {
-/*-moz-appearance: textfield !important;*/
-     border: 1px solid #E0E0E0 !important;
+    border: 1px solid #D4D4D4 !important;
+    font-size: 9pt !important;
+    height: 26px;
+    border-radius: 4px !important;
 }
 
-#urlbar[level] .autocomplete-textbox-container >* {
-	background-color: #FFFFD6 !important;
+#urlbar[level="high"] > .autocomplete-textbox-container {
+	background-color: #FEFFBD !important;
+}
+#urlbar[level="low"] > .autocomplete-textbox-container {
+	background-color: #CCFFCC !important;
+}
+#urlbar[level="broken"] > .autocomplete-textbox-container {
+	background-color: #FFE0E0 !important;
 }
         
 #urlbar > .autocomplete-history-dropmarker {
@@ -84,7 +94,7 @@ background-color: -moz-Field !important;
  
 .tabs-newtab-button:hover,
 .tabbrowser-tab:not([selected]):hover {
-	background-color: rgba(255,255,255,0.4) !important;
+	background-color: rgba(255,255,255,0.2) !important;
 	color: #444 !important;
 }
  
@@ -103,7 +113,6 @@ background-color: -moz-Field !important;
 	padding: 0 2px !important;
 	margin: 0 !important;
 }
-
 #nav-bar {
 	background-image: none !important;
 	background-color: #EEEEEE !important;
@@ -116,9 +125,9 @@ background-color: -moz-Field !important;
 
 /* Tabbar */
 .tabbrowser-tabs {
-	background-color: #E3E3E3 !important;
+	background-color: #DBDBDB !important;
 	border-top: 1px solid  #EEEEEE !important;
-	box-shadow: inset 0 2px  #E3E3E3 !important;
+	box-shadow: inset 0 2px  #DBDBDB !important;
 	margin: 0 !important;
 	border-bottom-width: 0 !important;
 }
@@ -138,13 +147,13 @@ background-color: -moz-Field !important;
 }
 
 #TabsToolbar:after {
-	border-bottom: 1px solid #E3E3E3 !important;
+	border-bottom: 1px solid #E0E0E0 !important;
 	margin-bottom: -1px !important;
 }
 
 .tabs-newtab-button {
-	margin: 0 !important;
-	padding: 0 !important;
+	margin: 4px !important;
+	padding: 0px !important;
 	max-width: 24px !important;
 }
 
@@ -177,8 +186,7 @@ background-color: -moz-Field !important;
 	background: none !important;
 	box-shadow: none !important;
 	border-color: transparent !important;
-   /* margin-left: 0px;*/
-    visibility: visible !important; 
+   	visibility: visible !important; 
 } 
 
 
@@ -186,11 +194,11 @@ background-color: -moz-Field !important;
 	background: none !important;
 	box-shadow: none !important;
 	border-color: transparent !important;
-    margin-right: 90px;
+  	margin-right: 15px
  } 
 
 #navigator-toolbox #forward-button {
-    visibility:visible!important; opacity:1!important
+    visibility:visible!important; opacity:1 !important
  }
 
 
@@ -203,8 +211,9 @@ background-color: -moz-Field !important;
 }
 
 #nav-bar>*{
-	margin-top: -3px !important;
-	margin-bottom: -4px !important;
+	margin-top: -1px !important;
+	margin-bottom: -2px !important;
+	margin-right: -6px !important;
 }
 
 #PanelUI-button {
@@ -218,12 +227,13 @@ background-color: -moz-Field !important;
 
 #main-window[sizemode="maximized"] #urlbar-container {
     margin-left: 0px;
-    margin-right: 90px;
+ 	margin-right: 15px;
+  
 }
 
-#urlbar {
-    height: 26px;
-    background: white !important;
-    border-radius: 3px !important;
-    padding: 3px !important;
+#nav-bar .toolbarbutton-1,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
+#nav-bar .toolbarbutton-1 {
+ 	 margin: 0px 4px 0px 0px !important;
 }
