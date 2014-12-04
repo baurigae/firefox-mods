@@ -10,7 +10,7 @@ All have these changes in common:
 - restored separators between tabs/pinned tabs
 - removed separator between settings icon and rest of toolbar
 
-Used via Stylish on top of the default Firefox (30, 31) theme
+Used via Stylish on top of the default Firefox (30, 31, 32, 33, 34) theme
 
 Running fine on Ubuntu 14.04
 
