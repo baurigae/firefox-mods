@@ -1,10 +1,10 @@
-###firefox UI mods/for Linux
+### firefox UI mods/for Linux
 
 (2016 update: I've since figured out GitHub (kinda.. :) and now my stylesheets can be found in [Gists](https://gist.github.com/baurigae))
 
 _And now - back to our regularly scheduled programming - in another time - previously, on baurigae's Firefox UI mods!.._
 
-A bunch of styles, mostly to accompany gtk themes, that started out as a mod of [this](https://github.com/lassekongo83/zuki-themes/blob/master/Zukitre-firefox-theme/chrome/userChrome.css) 
+A bunch of styles, mostly to accompany gtk themes
 
 All have these changes in common:
 
